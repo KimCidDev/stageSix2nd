@@ -13,11 +13,47 @@
   font-size: 62.5%;
 
 /*FONTS*/
-
+--font-color-main: #425D83;
+--font-color-logo: #28384F;
 
 /*COLORS*/
+--background-color: #425D83;
+--table-color: #A5B6CF;
 }
 
 body {
+  background: var(--background-color);
   font-size: 1.6rem;
+}
+
+body #app {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  padding: 3rem 0 5rem 0;
+}
+
+table {
+  border-radius: 10px;
+  padding: 2rem;
+  background: var(--table-color);
+  width: 50rem;
+}
+
+h2, p, span {
+  color: var(--font-color-main)
+}
+h1 {
+  color: var(--font-color-logo)
+}
+
+img {
+  max-width: 10rem;
+  border-radius: 66%
 }
