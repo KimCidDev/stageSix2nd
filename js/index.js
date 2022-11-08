@@ -1,3 +1,5 @@
-import FavouritesGitHub from './fav.js'
+import { CountriesView } from './countriesapp.js'
 
-const dataEntry = new FavouritesGitHub('#app')
+const kimsSelection = new CountriesView('#app')
+
+// kimsSelection.removeItems()
