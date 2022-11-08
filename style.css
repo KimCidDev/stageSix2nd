@@ -13,12 +13,15 @@
   font-size: 62.5%;
 
 /*FONTS*/
---font-color-main: #425D83;
---font-color-logo: #28384F;
+--logo-font: 'DM Sans', sans-serif;
+--body-font: 'Dosis', sans-serif;
 
 /*COLORS*/
---background-color: #425D83;
---table-color: #A5B6CF;
+--font-color-main: #CB904D;
+--font-color-logo: #C3E991;
+
+--background-color: #51A3A3;
+--table-color: #75485E;
 }
 
 body {
@@ -26,9 +29,10 @@ body {
   font-size: 1.6rem;
 }
 
-body #app {
+body #app, body button {
   max-width: 50rem;
   margin: 0 auto;
+  font-family: var(--body-font);
 }
 
 nav {
@@ -39,6 +43,31 @@ nav {
   padding: 3rem 0 5rem 0;
 }
 
+nav h1 {
+  font-family: var(--logo-font);
+}
+
+nav .searchBox {
+  display: flex;
+  align-items: center;
+}
+
+nav .searchBox #searchBar {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 3px;
+  background: #C3E991;
+}
+
+nav .searchBox button {
+  color: var(--table-color);
+  font-weight: bold;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 3px;
+  background: var(--font-color-main);
+}
+
 table {
   border-radius: 10px;
   padding: 2rem;
@@ -46,7 +75,27 @@ table {
   width: 50rem;
 }
 
-h2, p, span {
+table thead tr th {
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+table tbody tr td {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+table tbody tr td:nth-child(3) {
+  padding-right: 3rem;
+}
+
+h3, p, span {
   color: var(--font-color-main)
 }
 h1 {
@@ -54,6 +103,6 @@ h1 {
 }
 
 img {
-  max-width: 10rem;
+  max-width: 5rem;
   border-radius: 66%
 }
