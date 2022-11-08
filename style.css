@@ -66,6 +66,7 @@ nav .searchBox button {
   border: none;
   border-radius: 3px;
   background: var(--font-color-main);
+  cursor: pointer;
 }
 
 table {
@@ -93,6 +94,10 @@ table tbody tr td:first-child {
 
 table tbody tr td:nth-child(3) {
   padding-right: 3rem;
+}
+
+table tbody tr td:nth-child(4) p:hover {
+  cursor: pointer;
 }
 
 h3, p, span {
