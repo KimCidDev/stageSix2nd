@@ -45,6 +45,7 @@ nav {
 
 nav h1 {
   font-family: var(--logo-font);
+  font-size: 3.5rem;
 }
 
 nav .searchBox {
