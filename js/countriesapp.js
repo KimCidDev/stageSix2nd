@@ -23,7 +23,7 @@ export class Countries {
   }
 
   save() {
-    localStorage.setItem('@Where2Go', JSON.stringify(this.entries))
+    localStorage.setItem('@Where2Go:', JSON.stringify(this.entries))
   }
 
   async addInputData(countryname) {
@@ -89,9 +89,9 @@ export class CountriesView extends Countries {
 
       const row = this.newRow()
 
-      row.querySelector('.countryInfo img').src = `${country.flag}`
+      row.querySelector('.countryInfo img').src = country.flag
 
-      row.querySelector('.countryInfo img').alt = `${country.flagAlt}`
+      row.querySelector('.countryInfo img').alt = country.flagAlt
 
       row.querySelector('.countryInfo .countryNameContinent p').textContent =
         country.name

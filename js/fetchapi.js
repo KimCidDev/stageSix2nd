@@ -10,7 +10,9 @@ export class ImportCountry {
         name: data[0].name,
         subregion: data[0].subregion,
         population: data[0].population,
-        gini: data[0].gini
+        gini: data[0].gini,
+        flag: data[0].flag,
+        flagAlt: data[0].alt
       }))
   }
 }
